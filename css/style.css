@@ -1,0 +1,201 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #485460;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box {
+  width: 70vw;
+  height: 60vh;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(0, 0, 0, 0.5) 50%),
+    url(../images/bg1.jpg);
+  background-size: 100% 100%;
+  box-shadow: 0px 10px 20px -6px #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+#login {
+  width: 30%;
+  /* float: left; */
+}
+
+
+#login h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #253D42;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#login .inputBox {
+  position: relative;
+  left: 40px;
+}
+
+#login .inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+}
+
+#login .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  transition: 0.5s;
+}
+
+#login .inputBox input:focus~label,
+#login .inputBox input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #2779a0;
+  font-size: 20px;
+}
+
+
+#login input[type="submit"] {
+  background: transparent;
+  width: 100px;
+  left: 80px;
+  border: none;
+  outline: none;
+  color: black;
+  background: #03a9f4;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: grabbing;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#login input[type="submit"]:hover {
+  background: #d62049;
+  color: antiquewhite;
+}
+
+#login h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #3D463F;
+
+}
+
+
+img {
+
+  width: 35px;
+  height: 30px;
+  padding-right: 10px;
+  transition: all 0.3s linear;
+}
+
+img:hover {
+  width: 40px;
+  height: 40px;
+}
+
+#signup {
+  width: 40%;
+  /* float: right; */
+}
+
+#signup .inputBox {
+  position: relative;
+  right: 30px;
+}
+
+#signup h1 {
+  margin-bottom: 30px;
+
+  color: #BCC8CD;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#signup h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #BCC8CD;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#signup .inputBox input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  color: #BCC8CD;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #BCC8CD;
+  background: transparent;
+  outline: none;
+}
+
+#signup .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #BCC8CD;
+  transition: 0.5s;
+}
+
+#signup .inputBox input:focus~label,
+#signup .inputBox input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #0d9fb9;
+  font-size: 20px;
+}
+
+
+#signup input[type="submit"] {
+  background: transparent;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: black;
+  background: #03a9f4;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: grabbing;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#signup input[type="submit"]:hover {
+  background: #d62049;
+  color: antiquewhite;
+}
